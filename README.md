@@ -6,7 +6,7 @@ Official implementation of **"Domain Arithmetic: One-Shot VLA Adaptation under E
 
 <sub><span style="color:gray">\* Equal contribution &nbsp;&nbsp; † Corresponding author</span></sub>
 
-[[Paper]](https://arxiv.org/abs/2607.00666) [[Project Page]](https://twkang43.github.io/projects/dart/)
+[[Paper]](https://arxiv.org/abs/2607.00666) [[Project Page]](https://twkang43.github.io/projects/dart/) [[Checkpoints & Datasets]](https://huggingface.co/collections/SNUMPR/dart)
 
 
 ## 🧭 Overview
@@ -24,7 +24,7 @@ This repository provides:
 - [x] Release the paper on [arXiv](https://arxiv.org/abs/2607.00666).
 - [x] Launch the [project page](https://twkang43.github.io/projects/dart/).
 - [x] Release code.
-- [ ] Upload one-shot fine-tuning datasets and checkpoints.
+- [x] Upload one-shot fine-tuning datasets and checkpoints.
 
 ## 📦 Installation
 
@@ -156,7 +156,7 @@ Evaluate a DART checkpoint:
 ```bash
 GPU_ID=0 \
 POLICY_CONFIG=pi05_libero \
-CHECKPOINT_DIR=/path/to/output/DART_0.8 \
+CHECKPOINT_DIR=/path/to/output/DART \
 TASK_SUITE_NAME=libero_spatial \
 CAMERA_VIEW=medium \
 bash exec/eval.sh
@@ -167,7 +167,7 @@ Add `PERTURB` argument to evaluate with visual perturbations:
 ```bash
 GPU_ID=0 \
 POLICY_CONFIG=pi05_libero \
-CHECKPOINT_DIR=/path/to/output/DART_0.8 \
+CHECKPOINT_DIR=/path/to/output/DART \
 TASK_SUITE_NAME=libero_spatial \
 CAMERA_VIEW=medium \
 PERTURB=light_noise \
